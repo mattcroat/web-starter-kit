@@ -34,7 +34,7 @@ A starter 💼 kit for any 🕸 web development project!
 Clone the repository into your project folder
 
 ```shell
-git clone https://github.com/mattcroat/web-starter-kit.git
+git clone https://github.com/mattcroat/web-starter-kit.git .
 ```
 
 ## Installation
