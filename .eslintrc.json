@@ -1,21 +1,29 @@
 {
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
   "env": {
     "browser": true,
-    "commonjs": true,
     "es6": true
   },
-  "extends": ["airbnb-base", "prettier"],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "parserOptions": {
-    "ecmaVersion": 6
-  },
   "rules": {
-    "semi": ["error", "never"],
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "useTabs": true,
+        "singleQuote": true,
+        "trailingComma": "es5"
+      }
+    ],
     "quotes": ["error", "backtick"],
     "no-console": "off",
-    "indent": ["error", "tab"]
+    "new-cap": ["error", { "properties": false }],
+    "no-unused-expressions": ["error", { "allowTernary": true }],
+    "indent": ["error", "tab"],
+    "class-methods-use-this": "off",
+    "no-param-reassign": ["error", { "props": false }]
   }
 }
